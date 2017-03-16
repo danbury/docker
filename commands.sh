@@ -6,4 +6,4 @@ else
 fi
 
 # Get last 30 lines of my_container logs and clean
-tail -n 30 $(docker inspect -f {{.LogPath}} swaps_pricer) | sed "s/^.\{8\}//" | sed "s/..$//"
+tail -n 30 $(docker inspect -f {{.LogPath}} my_container) | sed "s/^.\{8\}//" | sed "s/..$//"
